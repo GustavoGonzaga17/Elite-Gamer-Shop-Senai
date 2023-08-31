@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+/*-----VARIÁVEIS-----*/
+:root {
+    --cor-primaria: #4E9F3D;
+    --cor-secundaria: #1E5128;
+    --cor-terciaria: #D8E9A8;
+    --cor-quartenaria: #191A19;
+    --cor--fundo-produtos: #F1F1F1;
+    --fonte-principal: 'Poppins', sans-serif;
+}
+/*-----//-----//-----//-----//-----//*/
+
+/*-----ESTILIZAÇÃO HEADER-----*/
+.header {
+    padding: 1.5em 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-quartenaria);
+    text-transform: uppercase;
+}
+
+.header__logo {
+    height: 6em;
+}
+
+.header__navegacao {
+    display: flex;
+    gap: 3.5em;
+}
+
+.header__navegacao__links {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+}
+
+.header__navegacao__links:hover {
+    color: var(--cor-primaria);
+}
+
+.header__grupo {
+    display: flex;
+    gap: 3.5em;
+}
+
+.header__grupo__icon-car-compras {
+    height: 2em;
+}
+
+.header__grupo__login {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-principal);
+    border: 2px solid var(--cor-primaria);
+    border-radius: 3px;
+    padding: 0.5em 1.5em;;
+}
+
+.header__grupo__login:hover {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+}
+/*-----//-----//-----//-----//-----//*/
+
+/*-----ESTILIZAÇÃO MAIN-----*/
+.main__principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10em;
+    background-color: var(--cor-quartenaria);
+    padding: 1.5em 5em;
+}
+
+.main__principal__textos {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    font-family: var(--fonte-principal);
+}
+
+.main__principal__textos__headline {
+    color: var(--cor-primaria);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+}
+
+.main__principal__textos__paragrafo {
+    color: var(--cor-terciaria);
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.main__principal__textos__link {
+    text-decoration: none;
+    text-align: center;
+    color: var(--cor-terciaria);
+    background-color: var(--cor-secundaria);
+    border-radius: 3px;
+    padding: 1em;
+    display: inline-block;
+    width: 10rem;
+}
+
+.main__fundo__imagem {
+    width: 28vw;
+}
+/*-----//-----//-----//-----//-----//-----//-----//*/
+
+/*-----ESTILIZAÇÃO DA SESSÃO MAIS VENDIDOS-----*/
+.main__mais-vendidos {
+    padding: 1.5em 5em;
+}
+
+.main__mais-vendidos__titulos {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-family: var(--fonte-principal);
+    align-items: center;
+}
+
+.main__mais-vendidos__titulos__titulo-principal {
+    color: var(--cor-secundaria);
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.main__mais-vendidos__titulos__subtitulo {
+    color: var(--cor-secundaria);
+    font-size: 1.3rem;
+    margin-bottom: 3em;
+}
+
+.main__mais-vendidos__todos-produtos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.main__mais-vendidos__todos-produtos__produtos {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+    color: var(--cor-quartenaria);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 16%;
+    height: auto;
+}
+
+.main__mais-vendidos__todos-produtos__produtos__fundo {
+    background-color: #fff;
+    box-shadow: 5px 5px 10px var(--cor-quartenaria);
+    width: 15em;
+    height: 18em;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.main__mais-vendidos__todos-produtos__produtos__fundo__imagem {
+    width: 100%;
+}
+
+.main__mais-vendidos__todos-produtos__produtos__nome {
+    font-weight: 600;
+    align-content: center;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.main__mais-vendidos__todos-produtos__produtos__preco-avaliacao {
+    display: flex;
+    gap: 5px;
+}
+
+.main__mais-vendidos__todos-produtos__produtos__preco-avaliacao__avaliacao {
+    height: 15px;
+    width: auto;
+}
+
+.main__mais-vendidos__todos-produtos__produtos__preco-avaliacao__cta {
+    background-color: var(--cor-primaria);
+    padding: 0.5em 2em;
+    border-radius: 5px;
+    margin-top: 0.5em;
+    text-decoration: none;
+    color: var(--cor-quartenaria);
+}
+
+.main__mais-vendidos__todos-produtos__produtos__preco-avaliacao__cta:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+}
+
+.main__mais-vendidos__button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 5em;
+}
+
+.main__mais-vendidos__button__see-all-products {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 15%;
+    border: solid 2px var(--cor-primaria);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    font-size: 1rem;
+}
+
+.main__mais-vendidos__button__see-all-products__texto {
+    font-family: var(--fonte-principal);
+    color: var(--cor-primaria);
+}
+
+.main__mais-vendidos__button__see-all-products__icone {
+    height: 18px;
+    width: auto;
+}
+
+/*-----ESTILIZAÇÃO SEÇÃO OUTROS PRODUTOS-----*/
+
+.main__outros-produtos {
+    padding: 1.5em 5em;
+}
+
+.main__outros-produtos__titulo {
+    font-family: var(--fonte-principal);
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--cor-secundaria);
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.main__outros-produtos__navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    font-size: 1.3rem;
+    font-family: var(--fonte-principal);
+    margin-bottom: 2em;
+}
+
+.main__outros-produtos__navegacao__links {
+    color: var(--cor-quartenaria);
+    text-decoration: none;
+}
+
+.main__outros-produtos__navegacao__links:hover {
+    color: var(--cor-primaria);
+}
+
+.main__outros-produtos__produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em 8em;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#sectionGames, #sectionComputadores, #sectionHardware {
+    display: none;
+}
+
+.main__upgrade {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 8em 4em;
+    background-color: var(--cor-primaria);
+    border-radius: 35px;
+    padding: 2em;
+}
+
+.main__upgrade__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: var(--fonte-principal);
+    gap: 2.5em;
+}
+
+.main__upgrade__texto__titulo, .main__upgrade__texto__oferta {
+    font-weight: 700;
+}
+
+.main__upgrade__texto__oferta {
+    color: var(--cor-terciaria);
+}
+
+.main__upgrade__texto__btn {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    background-color: var(--cor-secundaria);
+    padding: 1em;
+    width: 35%;
+    text-align: center;
+    border-radius: 35px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5em;
+    padding: 1em 10em 5em 10em;
+    background-color: var(--cor-secundaria);
+}
+
+.footer__logo {
+    width: 15%;
+    text-align: center;
+}
+
+.footer__secao-principal {
+    display: flex;
+}
+
+.footer__secao-principal__titulo {
+    font-family: var(--fonte-principal);
+    color: var(--cor-terciaria);
+    font-size: 1.3rem;
+}
+
+.footer__secao-principal__social__grupo {
+    display: flex;
+    gap: 1em;
+}
+
+.footer__secao-principal__social__grupo__icones {
+    width: 10%;
+}
+
+.footer__secao-principal__coluna {
+    width: 80%;
+}
+
+.footer__secao-principal__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.footer__secao-principal__nav__links {
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+}
+
+.footer__secao-principal__email {
+    display: flex;
+}
+
+.campo-email {
+    border: var(--cor-primaria) solid 2px;
+    text-decoration: none;
+    background: none;
+    color: var(--cor-terciaria);
+}
+
+.btn-enviar {
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    padding: 0.5em;
+}
+
