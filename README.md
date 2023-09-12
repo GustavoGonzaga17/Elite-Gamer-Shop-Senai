@@ -1,5 +1,4 @@
 :fire:<h1>Elite Gamer Shop</h1>:fire:
-<hr>
 :exclamation:<h2>Sobre o Projeto:</h2>:exclamation:
 <p>A Empresa Elite Gamer Shop é uma empresa ficticia, todo o desenvolvimento do eccomerce faz parte do curso de Desenvolvimento FullStack ofertado pelo SENAI, ao final do projeto teremos um eccomerce completo com todas as suas funcionalidade tanto Back-End, Front-End e Banco de Dados</p>
 
